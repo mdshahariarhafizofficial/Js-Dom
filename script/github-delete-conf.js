@@ -6,7 +6,8 @@ textInput.addEventListener( 'keyup', function(){
     if ( typingValue === 'delete' ) {
            deleteBtn.removeAttribute('disabled');
            deleteBtn.addEventListener( 'click', function(){
-            sucMsg.style.display = 'block';
+                sucMsg.style.display = 'block';
+                textInput.value = '';
            } )     
     }else{
         deleteBtn.setAttribute('disabled', true);
